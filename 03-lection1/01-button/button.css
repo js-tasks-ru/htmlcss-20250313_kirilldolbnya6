@@ -1,4 +1,21 @@
 /* Стилизация кнопки */
+
+button{
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 500;
+    text-align: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:disabled{
+    opacity: 0.6;
+    cursor: not-allowed !important;
+}
+
 .primary{
     padding: 15px 65px;
     background: var(--primary);
@@ -7,20 +24,10 @@
     transition: all .3s;
 
     color: var(--white);
-    font-size: 16px;
-    line-height: 100%;
-    font-weight: 500;
-    text-align: center;
 }
 
 .primary:hover{
-    background: #2342C0;
-    cursor: pointer;
-}
-
-.primary:disabled{
-    opacity: 0.6;
-    cursor: not-allowed;
+    background: var(--primary-hover);
 }
 
 .secondary{
@@ -31,20 +38,10 @@
     transition: all .3s;
 
     color: var(--white);
-    font-size: 16px;
-    line-height: 100%;
-    font-weight: 500;
-    text-align: center;
 }
 
 .secondary:hover{
-    background: #5028C6;
-    cursor: pointer;
-}
-
-.secondary:disabled{
-    opacity: 0.6;
-    cursor: not-allowed;
+    background: var(--secondary-hover);
 }
 
 .alternate{
@@ -55,18 +52,8 @@
     transition: all .3s;
 
     color: var(--grey-4);
-    font-size: 16px;
-    line-height: 100%;
-    font-weight: 500;
-    text-align: center;
 }
 
 .alternate:hover{
     border: 1px solid var(--grey-4);
-    cursor: pointer;
-}
-
-.alternate:disabled{
-    opacity: 0.6;
-    cursor: not-allowed;
 }
