@@ -1,4 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-    <!-- Ваше решение -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вводные материалы - задача 1</title>
+</head>
+<body>
+    <header class="header">header</header>
+    <nav class="nav">
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+        <a href="#">link 3</a>
+    </nav>
+    <main class="main">
+        <article class="article">
+            article 1
+            <ol class="article__list">
+                <li class="article__list-item">текст 1</li>
+                <li class="article__list-item">текст 2</li>
+                <li class="article__list-item">текст 3</li>
+            </ol>
+        </article>
+        <article class="article">
+            article 2
+            <ul class="article__list">
+                <li class="article__list-item">текст 1</li>
+                <li class="article__list-item">текст 2</li>
+                <li class="article__list-item">текст 3</li>
+            </ul>
+        </article>
+    </main>
+    <footer class="footer">footer</footer>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .header {
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 20px;
+            background: #FFF;
+
+            color: #000;
+            font-size: 60px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .nav{
+            margin-top: 10px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 20px;
+            background: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .nav a{
+            margin-top: 10px;
+            color: #000;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+
+        .main{
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 20px;
+            background: #FFF;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .main .article{
+            padding: 10px;
+            background: #000;
+            border-radius: 10px;
+
+            color: #FFF;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .main .article ol{
+            margin-top: 10px;
+            list-style-position: inside;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .main .article ul{
+            margin-top: 10px;
+            list-style-position: inside;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .main .article li:not(:last-child){
+            margin-bottom: 5px;
+        }
+
+        .footer{
+            margin-top: 10px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 20px;
+            background: #FFF;
+
+            color: #000;
+            font-size: 60px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    </style>
+</body>
 </html>
